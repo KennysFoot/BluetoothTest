@@ -14,9 +14,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Set;
+import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public static final String UUID_STRING = "92051e52-0366-4a88-a014-abb6056d4095";
+    public static final UUID MY_UUID = UUID.fromString(UUID_STRING);
     private static final int REQUEST_ENABLE_BT = 1;
 
     private TextView tvPaired;
